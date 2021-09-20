@@ -1,0 +1,172 @@
+/* .navigation__row {
+    height: 10vh;
+    border: 1px solid black;
+    width: auto;
+
+} */
+
+.grid {
+    border: 1px solid black;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation__row {
+    display: grid;
+    width: auto;
+    height: 10vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: black;
+    grid-template-areas: 
+    "navigation__logo . navigation";
+}
+
+.navigation__logo {
+    grid-area: navigation__logo;
+}
+
+.navigation {
+    grid-area: navigation;
+}
+
+.hamburger {
+    width: 6vw;
+    height: 3vh;
+    border: 0;
+    border-top: 5px solid #ffffff;
+    background: transparent;
+    position: relative;
+    /* transition: 0.3s transform linear;   for future update */
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #ffffff;
+    transform: translateY(5px);
+}
+
+.hamburger::after {
+    transform: translateY(15px);
+    /* transition: 0.3s transform linear;    for future update */
+}
+
+/* .hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+  }                                             for future update
+  
+  .hamburger:focus::after {
+    transform: rotate(-90deg) translateX(-10px);
+  } */
+
+.logo {
+    width: 90%;
+    height: 65%;
+}
+
+.first__section--grid {
+    display: grid;
+    width: auto;
+    height: 140vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: 
+    "section__text"
+    "section__photo";
+}
+
+.section__text {
+    grid-area: section__text;
+    background-image: url(./images/banner/banner.png);
+    background-position: top center;
+}
+
+.section__photo {
+    grid-area: section__photo;
+    background-image: url(./images//banner/banner.png);
+    background-position: 100% 40%;
+    background-repeat: no-repeat;
+}
+
+.first__header {
+    color: var(--color-alfa);
+    padding: 5% 2%;
+}
+
+.first__paragraph {
+    color: var(--color-alfa);
+    padding-left: 2%;
+    padding-bottom: 5%;
+}
+
+.section__button {
+    background-color: #37EBED;
+    border: none;
+    margin-left: 2%;
+    width: 40%;
+    color: var(--color-alfa);
+    font-size: 1.2rem;
+    height: 6vh;
+    border-radius: 10px;
+    margin-top: 10%;
+}
+
+.photo__size {
+    max-height: 100%;
+    width: 85%;
+}
+
+.second__section--grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 100%;
+    grid-template-areas: 
+    "section__header"
+    "section__icons";
+}
+
+.section__header {
+    grid-area: section__header;
+    text-align: center;
+}
+
+.section__icons {
+    grid-area: section__icons;
+}
+
+.icon__size {
+    height: 25%;
+    width: 25%;
+    border-radius: 30px;
+}
+
+.position__icons {
+    text-align: center;
+    padding: 30px 0;
+}
+/* wiem, że tutaj ikonki są mniejsze na projekcie i wystarczy je wrzucić w jakiegoś diva i nadać mu gradient, ale większe mi się bardziej podobają :D */
+.blue__icon {
+    background: linear-gradient(90deg, rgba(3,130,245,1) 0%, rgba(88,175,255,1) 100%);
+}
+
+.orange__icon {
+    background: linear-gradient(90deg, rgba(253,173,92,1) 0%, rgba(253,143,94,1) 100%);}
+
+.green__icon {
+    background-color: rgb(55, 239, 141);
+}
+
+.list__text {
+    font-size: 1.8rem;
+    padding: 30px 10px;
+}
