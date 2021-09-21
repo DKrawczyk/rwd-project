@@ -1,10 +1,3 @@
-/* .navigation__row {
-    height: 10vh;
-    border: 1px solid black;
-    width: auto;
-
-} */
-
 .grid {
     border: 1px solid black;
 }
@@ -21,7 +14,7 @@
     height: 10vh;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
-    background-color: black;
+    background-color: rgb(40, 40, 40);
     grid-template-areas: 
     "navigation__logo . navigation";
 }
@@ -69,16 +62,17 @@
   } */
 
 .logo {
-    width: 90%;
-    height: 65%;
+    width: auto;
+    margin-left: 2%;
+    height: 50%;
 }
 
 .first__section--grid {
     display: grid;
     width: auto;
-    height: 140vh;
+    height: 120vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: 1fr 2fr;
     grid-template-areas: 
     "section__text"
     "section__photo";
@@ -93,7 +87,7 @@
 .section__photo {
     grid-area: section__photo;
     background-image: url(./images//banner/banner.png);
-    background-position: 100% 40%;
+    background-position: 100% 55%;
     background-repeat: no-repeat;
 }
 
@@ -117,11 +111,11 @@
     font-size: 1.2rem;
     height: 6vh;
     border-radius: 10px;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .photo__size {
-    max-height: 100%;
+    max-height: 90%;
     width: 85%;
 }
 
@@ -133,6 +127,7 @@
     grid-template-areas: 
     "section__header"
     "section__icons";
+    margin-top: 20px;
 }
 
 .section__header {
@@ -169,4 +164,311 @@
 .list__text {
     font-size: 1.8rem;
     padding: 30px 10px;
+}
+
+.main__row {
+    margin-top: 10%;
+}
+
+.main__row--grid {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "main__text"
+    "main__photo";
+}
+
+.main__text {
+    grid-area: main__text;
+    text-align: center;
+    margin: 5px 2%;
+}
+
+.main__photo {
+    grid-area: main__photo;
+    margin-top: 60px;
+}
+
+.main__paragraph {
+    text-align: justify;
+    margin: 5px 2%;
+}
+
+.main__button {
+    float: left;
+    margin-top: 10%;
+    border-radius: 10px;
+    border: none;
+    width: 44%;
+    height: 18%;
+    margin-left: 2%;
+    color: var(--color-alfa);
+    font-size: 1.2rem;
+    background-color: rgb(1, 129, 245);
+}
+
+.section__opacity--background {
+    background: url(./images/banner/testmonial.png);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(1, 129, 245);
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    max-height: 100%;
+    width: auto;
+
+}
+
+.section__opacity--background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(93,178,255,0.8);
+}
+
+.opacity__position {
+    color: white;
+    position: relative;
+}
+
+.stars__opinion {
+    position: relative;
+    top: 36%;
+}
+
+.text__opinion {
+    color: var(--color-alfa);
+    float: right;
+    font-size: 1rem;
+}
+
+.fas {
+    color: rgb(255, 211, 90);
+}
+
+.first__text {
+    top: 20%;
+}
+
+.second__text {
+    top: 30%;
+}
+
+.offer__row--grid {
+    display: grid;
+    height: 160vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2.4fr 2.7fr 2.4fr;
+    grid-template-areas: 
+    "offer__header"
+    "basic__offer"
+    "team__offer"
+    "business__offer";
+}
+
+.offer__text {
+    grid-area: offer__header;
+    text-align: center;
+}
+
+.basic__offer {
+    grid-area: basic__offer;
+}
+
+.team__offer {
+    grid-area: team__offer;
+}
+
+.business__offer {
+    grid-area: business__offer;
+}
+
+.offer__header {
+    margin: 20px 0;
+}
+
+.offer__paragraph {
+    margin: 15px 2%;
+}
+
+.list__offer {
+    text-align: center;
+}
+
+.offer__div {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.basic__div {
+    background-color: rgb(233, 244, 254);
+}
+
+.team__div {
+    background-color: rgb(254, 244, 238);
+}
+
+.business__div {
+    background-color: rgb(232, 252, 241);
+}
+
+
+.offer__span {
+    padding: 0 30px;
+    font-weight: 500;
+}
+
+.span__basic {
+    color: rgb(25, 159, 248)
+}
+
+.span__team{
+    color: rgb(253, 187, 182)    
+}
+
+.span__business{
+    color: rgb(3, 211, 108);
+}
+
+.offer__item {
+    padding: 14px 0;
+}
+
+.offer {
+    box-shadow: 0px 0px 18px 0px rgb(0 0 0 / 60%);
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.item__button {
+    border-radius: 5px;
+    border-color: rgb(1, 129, 245);
+    color: rgb(1, 129, 245);
+    width: 28vw;
+    height: 5vh;
+    background-color: white;
+    border: 1px solid;
+    font-size: 1rem;
+    margin-top: 14px 0;
+}
+
+.blue__row--grid {
+    display: grid;
+    height: 36vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "application__images";
+    background-color: rgb(93, 178, 255);
+
+}
+
+.blue__header {
+    margin-bottom: 20px;
+}
+
+.application__images {
+    grid-area: application__images;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+
+.black__row--grid {
+    display: grid;
+    height: 90vh;
+    background-color: rgb(40, 40, 40);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "applab__footer"
+    "services__footer"
+    "links__footer"
+    "download__footer"
+    ;
+    color: var(--color-alfa);
+}
+
+.applab__footer {
+    grid-area: applab__footer;
+}
+
+.services__footer {
+    grid-area: services__footer;
+}
+
+.links__footer {
+    grid-area: links__footer;
+}
+
+.download__footer {
+    grid-area: download__footer;
+}
+
+.margin__item {
+    margin: 10px 2%;
+}
+
+.footer__logo {
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 2%;
+}
+
+.icon {
+    color: rgb(199, 199, 199);
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 50%;
+    border-color: rgb(86, 86, 86);
+    background-color: rgb(86, 86, 86);
+    margin: 15px 5px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+}
+
+.margin__item--bold {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.margin__item--font {
+    font-size: 100%
+}
+
+.footer__row {
+    text-align: center;
+    height: 10vh;
+    width: auto;
+    background-color: var(--color-beta);
+    color: var(--color-alfa);
+}
+
+.footer__rights {
+    font-size: 0.8rem;
+    margin: auto;
+}
+
+.footer__creators {
+    color: rgb(35, 119, 226);
+}
+
+.center__footer {
+    height: 100%;
+    display: grid;
 }
