@@ -24,6 +24,13 @@
 
 .navigation__header--download {
     grid-area: navigation__header--download;
+    background-color: rgb(66, 179, 250);
+    border: none;
+    color: var(--color-alfa);
+    font-size: 1rem;
+    height: 51%;
+    border-radius: 5px;
+    width: 10%;
 }
 
 .navigation__header {
@@ -483,7 +490,7 @@
     width: auto;
     color: var(--color-alfa);
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1200px;
 }
 
 .footer__rights {
@@ -499,3 +506,4 @@
     height: 100%;
     display: grid;
 }
+
