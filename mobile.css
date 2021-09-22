@@ -113,7 +113,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 10% 100%;
     grid-template-areas: 
     "section__header"
     "section__icons";
@@ -123,16 +123,10 @@
 .section__header {
     grid-area: section__header;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 .section__icons {
     grid-area: section__icons;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
 .icon__size {
@@ -143,9 +137,9 @@
 
 .position__icons {
     text-align: center;
-    padding: 20px;
+    padding: 30px 0;
 }
-
+/* wiem, że tutaj ikonki są mniejsze na projekcie i wystarczy je wrzucić w jakiegoś diva i nadać mu gradient, ale większe mi się bardziej podobają :D */
 .blue__icon {
     background: linear-gradient(90deg, rgba(3,130,245,1) 0%, rgba(88,175,255,1) 100%);
 }
