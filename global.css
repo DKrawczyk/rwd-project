@@ -23,18 +23,6 @@ p {
     justify-content: center;
 }
 
-.center__column {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .grid {
     border: 1px solid black;
 }
-
-/* .container {
-    margin: 0 auto;
-    width: 100%;
-} */

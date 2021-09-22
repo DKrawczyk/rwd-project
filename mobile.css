@@ -57,7 +57,7 @@
     height: 50%;
 }
 
-.first__section--grid {
+.section__row {
     display: grid;
     width: auto;
     height: 120vh;
@@ -109,11 +109,11 @@
     width: 85%;
 }
 
-.second__section--grid {
+.second__section {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 100%;
+    grid-template-rows: 10% 900%;
     grid-template-areas: 
     "section__header"
     "section__icons";
@@ -123,10 +123,15 @@
 .section__header {
     grid-area: section__header;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .section__icons {
     grid-area: section__icons;
+}
+
+.section__icons .center {
+    flex-direction: column;
 }
 
 .icon__size {
@@ -139,7 +144,7 @@
     text-align: center;
     padding: 30px 0;
 }
-/* wiem, że tutaj ikonki są mniejsze na projekcie i wystarczy je wrzucić w jakiegoś diva i nadać mu gradient, ale większe mi się bardziej podobają :D */
+
 .blue__icon {
     background: linear-gradient(90deg, rgba(3,130,245,1) 0%, rgba(88,175,255,1) 100%);
 }
@@ -178,7 +183,8 @@
 
 .main__photo {
     grid-area: main__photo;
-    margin-top: 60px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 .main__paragraph {
