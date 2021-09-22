@@ -185,7 +185,7 @@
 }
 
 .main__row--grid {
-    height: 65vh;
+    height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -216,9 +216,65 @@
     border-radius: 10px;
     border: none;
     width: 50%;
-    height: 10%;
+    height: 12%;
     margin-left: 2%;
     color: var(--color-alfa);
     font-size: 1.2rem;
     background-color: rgb(1, 129, 245);
+}
+
+
+.section__opacity--background {
+    background: url(./images/banner/testmonial.png);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(1, 129, 245);
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    max-height: 100%;
+    width: auto;
+
+}
+
+.section__opacity--background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(93,178,255,0.8);
+}
+
+.opacity__position {
+    color: white;
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.stars__opinion {
+    position: relative;
+    top: 36%;
+}
+
+.text__opinion {
+    color: var(--color-alfa);
+    float: right;
+    font-size: 1rem;
+}
+
+.fas {
+    color: rgb(255, 211, 90);
+}
+
+.first__text {
+    top: 20%;
+}
+
+.second__text {
+    top: 30%;
 }
