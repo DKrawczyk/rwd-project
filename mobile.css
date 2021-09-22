@@ -299,6 +299,10 @@
     text-align: center;
 }
 
+.basic__offer, .business__offer {
+    height: 44vh;
+}
+
 .offer__div {
     height: 8vh;
     display: flex;

@@ -276,6 +276,10 @@
     top: 30%;
 }
 
+.offer__container {
+    height: 80vh;
+}
+
 .offer__container--inside {
     display: flex;
     align-items: center;
@@ -291,7 +295,6 @@
 }
 
 .offer__row {
-    /* height: 160vh; */
     max-width: 900px;
     margin: 0 auto;
 }
@@ -370,15 +373,19 @@
     margin-top: 14px;
 }
 
-/* .blue__row--grid {
+.blue__container {
+    background-color: rgb(93, 178, 255);
+    height: 60vh;
+}
+
+.blue__row--grid {
     display: grid;
-    height: 36vh;
+    height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: 
-    "application__images";
-    background-color: rgb(93, 178, 255);
-
+    grid-template-areas: "application__images";
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .blue__header {
@@ -387,25 +394,28 @@
 
 .application__images {
     grid-area: application__images;
-    margin: 0 auto;
     text-align: center;
     color: white;
     margin: auto;
 }
 
+.black__container {
+    background-color: rgb(40, 40, 40);
+    height: 92vh;
+}
+
 .black__row--grid {
     display: grid;
-    height: 90vh;
-    background-color: rgb(40, 40, 40);
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
-    "applab__footer"
-    "services__footer"
-    "links__footer"
-    "download__footer"
-    ;
+    "applab__footer services__footer"
+    "links__footer download__footer";
     color: var(--color-alfa);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10%;
 }
 
 .applab__footer {
@@ -425,5 +435,66 @@
 }
 
 .margin__item {
-    margin: 10px 2%;
-} */
+    margin: 26px 0;
+}
+
+.footer__logo {
+    width: auto;
+    height: auto;
+    margin-top: 15px;
+}
+
+.icon {
+    color: rgb(199, 199, 199);
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 50%;
+    border-color: rgb(86, 86, 86);
+    background-color: rgb(86, 86, 86);
+    margin: 15px 5px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+}
+
+.margin__item--bold {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.margin__item--font {
+    font-size: 100%
+}
+
+.margin__left {
+    margin-left: 40px;
+}
+
+
+
+.footer__container {
+    background-color: var(--color-beta);
+}
+
+.footer__row {
+    text-align: center;
+    height: 10vh;
+    width: auto;
+    color: var(--color-alfa);
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.footer__rights {
+    font-size: 0.8rem;
+    margin: auto;
+}
+
+.footer__creators {
+    color: rgb(35, 119, 226);
+}
+
+.center__footer {
+    height: 100%;
+    display: grid;
+}
