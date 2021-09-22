@@ -176,8 +176,6 @@
     padding: 40px 10px;
 }
 
-
-
 .main__row {
     margin-top: 10%;
     max-width: 900px;
@@ -222,7 +220,6 @@
     font-size: 1.2rem;
     background-color: rgb(1, 129, 245);
 }
-
 
 .section__opacity--background {
     background: url(./images/banner/testmonial.png);
@@ -278,3 +275,155 @@
 .second__text {
     top: 30%;
 }
+
+.offer__container--inside {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 6%;
+}
+
+.offer {
+    box-shadow: 0px 0px 18px 0px rgb(0 0 0 / 60%);
+    margin-bottom: 20px;
+    width: 32%;
+    height: 44vh;
+}
+
+.offer__row {
+    /* height: 160vh; */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.offer__text {
+    text-align: center;
+    margin-top: 16%;
+}
+
+.offer__header {
+    margin: 20px 0;
+}
+
+.offer__paragraph {
+    margin: 15px 2%;
+}
+
+.list__offer {
+    text-align: center;
+}
+
+.offer__div {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.basic__div {
+    background-color: rgb(233, 244, 254);
+}
+
+.team__div {
+    background-color: rgb(254, 244, 238);
+}
+
+.team__offer {
+    height: 50vh;
+}
+
+.business__div {
+    background-color: rgb(232, 252, 241);
+}
+
+.offer__span {
+    padding: 0 30px;
+    font-weight: 500;
+}
+
+.span__basic {
+    color: rgb(25, 159, 248)
+}
+
+.span__team{
+    color: rgb(253, 187, 182)    
+}
+
+.span__business{
+    color: rgb(3, 211, 108);
+}
+
+.offer__item {
+    padding: 14px 0;
+}
+
+.item__button {
+    border-radius: 5px;
+    border-color: rgb(1, 129, 245);
+    color: rgb(1, 129, 245);
+    width: 44%;
+    height: 5vh;
+    background-color: white;
+    border: 1px solid;
+    font-size: 1rem;
+    margin-top: 14px;
+}
+
+/* .blue__row--grid {
+    display: grid;
+    height: 36vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "application__images";
+    background-color: rgb(93, 178, 255);
+
+}
+
+.blue__header {
+    margin-bottom: 20px;
+}
+
+.application__images {
+    grid-area: application__images;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+
+.black__row--grid {
+    display: grid;
+    height: 90vh;
+    background-color: rgb(40, 40, 40);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "applab__footer"
+    "services__footer"
+    "links__footer"
+    "download__footer"
+    ;
+    color: var(--color-alfa);
+}
+
+.applab__footer {
+    grid-area: applab__footer;
+}
+
+.services__footer {
+    grid-area: services__footer;
+}
+
+.links__footer {
+    grid-area: links__footer;
+}
+
+.download__footer {
+    grid-area: download__footer;
+}
+
+.margin__item {
+    margin: 10px 2%;
+} */
