@@ -1,3 +1,123 @@
-body {
-    background-color: lightcoral;
+.navigation__container {
+    background-image: url(./images/banner/banner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.navigation__row {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.navigation__logo {
+    grid-area: navigation__logo;
+}
+
+.navigation {
+    grid-area: navigation;
+}
+
+.navigation__header--download {
+    grid-area: navigation__header--download;
+}
+
+.navigation__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation__header--item {
+    padding: 0 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #ffffff;
+    transform: translateY(5px);
+}
+
+.hamburger::after {
+    transform: translateY(15px);
+    /* transition: 0.3s transform linear;    for future update */
+}
+
+.logo {
+    width: auto;
+    margin-left: 2%;
+    height: 50%;
+}
+
+.section__container {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 95vh;
+}
+
+.section__row {
+    display: grid;
+    height: 100%;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "section__text section__photo";
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section__text {
+    grid-area: section__text;
+    height: 100%;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: self-start;
+}
+
+.section__photo {
+    grid-area: section__photo;
+    height: 100%;
+}
+
+.first__header {
+    color: var(--color-alfa);
+    padding: 5% 2%;
+}
+
+.first__paragraph {
+    color: var(--color-alfa);
+    padding-left: 2%;
+    padding-bottom: 5%;
+}
+
+.section__button {
+    background-color: #37EBED;
+    border: none;
+    margin-left: 2%;
+    color: var(--color-alfa);
+    font-size: 1.2rem;
+    height: 8vh;
+    border-radius: 10px;
+    margin-top: 5%;
+    width: 50%;
+}
+
+.photo__size {
+    max-height: 90%;
+    width: 75%;
+    margin-bottom: 10%;
 }

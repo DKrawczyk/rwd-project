@@ -57,6 +57,14 @@
     height: 50%;
 }
 
+.navigation__header {
+    display: none;
+}
+
+.navigation__header--download {
+    display: none;
+}
+
 .section__row {
     display: grid;
     width: auto;
@@ -113,7 +121,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 900%;
+    grid-template-rows: 10% 90%;
     grid-template-areas: 
     "section__header"
     "section__icons";
@@ -128,6 +136,7 @@
 
 .section__icons {
     grid-area: section__icons;
+    text-align: center;
 }
 
 .section__icons .center {

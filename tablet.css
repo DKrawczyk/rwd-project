@@ -1,4 +1,4 @@
-.navigation__container {
+.navigation__color {
     background-color: rgb(40, 40, 40); 
 }
 
@@ -50,6 +50,14 @@
     width: auto;
     margin-left: 2%;
     height: 50%;
+}
+
+.navigation__header {
+    display: none;
+}
+
+.navigation__header--download {
+    display: none;
 }
 
 .section__container {
@@ -193,7 +201,7 @@
 
 .main__text {
     grid-area: main__text;
-    text-align: center;
+    text-align: start;
     margin: 0 2%;
     margin-bottom: 15%;
 }
