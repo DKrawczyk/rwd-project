@@ -1,13 +1,3 @@
-.grid {
-    border: 1px solid black;
-}
-
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .navigation__row {
     display: grid;
     width: auto;

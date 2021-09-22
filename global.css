@@ -17,3 +17,12 @@ p {
     font-size: 1.2rem;
 }
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    border: 1px solid black;
+}
