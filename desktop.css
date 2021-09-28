@@ -39,26 +39,17 @@
 }
 
 .navigation__item {
-    padding: 0 20px;
+    padding: 5px 25px;
 }
 
-.hamburger {
+.navigation__item:hover {
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(77, 169, 251);
+}
+
+input {
     display: none;
-}
-
-.hamburger::before, .hamburger::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-top: 5px solid #ffffff;
-    transform: translateY(5px);
-}
-
-.hamburger::after {
-    transform: translateY(15px);
-    /* transition: 0.3s transform linear;    for future update */
 }
 
 .header__section {
@@ -451,6 +442,7 @@
     width: 38px;
     height: 38px;
     text-align: center;
+    text-decoration: none;
 }
 
 .section__item--bold-font {
