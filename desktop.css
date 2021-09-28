@@ -52,25 +52,25 @@ input {
     display: none;
 }
 
-.header__section {
+.text__title {
     background-repeat: no-repeat;
     background-size: contain;
     height: 95vh;
 }
 
-.header__section--position {
+.text__title--position {
     display: grid;
     height: 100%;
     width: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "header__text header__photo";
+    grid-template-areas: "text__content header__photo";
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.header__text {
-    grid-area: header__text;
+.text__content {
+    grid-area: text__content;
     height: 100%;
     padding-top: 15%;
     display: flex;
@@ -84,18 +84,18 @@ input {
     height: 100%;
 }
 
-.header__headline {
+.content__header {
     color: var(--color-alfa);
     padding: 5% 2%;
 }
 
-.header__paragraph {
+.content__description {
     color: var(--color-alfa);
     padding-left: 2%;
     padding-bottom: 5%;
 }
 
-.header-action__button {
+.content__button {
     background-color: #37EBED;
     border: none;
     margin-left: 2%;
