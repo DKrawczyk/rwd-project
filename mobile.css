@@ -308,6 +308,7 @@ input:checked + .hamburger::after {
 
 .main__team {
     grid-area: main__team;
+    height: 50vh;
 }
 
 .main__business {
@@ -394,6 +395,7 @@ input:checked + .hamburger::after {
 .section__row--blue {
     display: grid;
     height: 36vh;
+    margin-top: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
