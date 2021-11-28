@@ -73,11 +73,17 @@ input:checked + .hamburger::after {
 .navigation__item {
     padding: 15px 2%;
     font-size: 1.5rem;
+    transition: .8s;
+}
+
+.navigation__item > a {
+    text-decoration: none;
+    color: var(--color-alfa);
 }
 
 .navigation__item:hover {
     cursor: pointer;
-    font-weight: bold;
+    background-color: rgb(40, 40, 40);
 }
 
 .header__button {

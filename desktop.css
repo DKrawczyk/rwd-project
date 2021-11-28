@@ -30,6 +30,11 @@
     height: 51%;
     border-radius: 5px;
     width: 10%;
+    transition: transform .5s;
+}
+
+.header__button:hover {
+    transform: scale(1.15);
 }
 
 .navigation__list {
@@ -42,8 +47,13 @@
     padding: 5px 25px;
 }
 
+.navigation__item > a {
+    text-decoration: none;
+    color: var(--color-alfa);
+}
+
 .navigation__item:hover {
-    font-weight: bold;
+    border-radius: 25px;
     cursor: pointer;
     background-color: rgb(77, 169, 251);
 }
@@ -105,6 +115,11 @@ input {
     border-radius: 10px;
     margin-top: 5%;
     width: 50%;
+    transition: transform .5s;
+}
+
+.content__button:hover {
+    transform: scale(1.1);
 }
 
 .header__photo--size {
@@ -141,6 +156,11 @@ input {
 .list__icons {
     width: 30%;
     flex-direction: column;
+    transition: transform .5s;
+}
+
+.list__icons:hover {
+    transform: scale(1.2);
 }
 
 .list__icon--size  {
@@ -211,6 +231,11 @@ input {
     color: var(--color-alfa);
     font-size: 1.2rem;
     background-color: rgb(1, 129, 245);
+    transition: transform .5s;
+}
+
+.article__button:hover {
+    transform: scale(1.1);
 }
 
 .section__background {
@@ -282,6 +307,11 @@ input {
     margin-bottom: 20px;
     width: 32%;
     height: 44vh;
+    transition: transform .5s;
+}
+
+.main__offer:hover {
+    transform: scale(1.04);
 }
 
 .main__row {
@@ -361,6 +391,12 @@ input {
     border: 1px solid;
     font-size: 1rem;
     margin-top: 14px;
+    transition: 1s;
+}
+
+.main__button:hover {
+    transition: 1s;
+    background-color: rgba(93,178,255,0.8);
 }
 
 .section--blue {
@@ -428,7 +464,13 @@ input {
 }
 
 .section__container--space {
-    margin: 32px 0;
+    margin: 16px 0;
+    padding: 16px 0;
+}
+
+.hover-effect:hover {
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .icon {
@@ -443,6 +485,11 @@ input {
     height: 38px;
     text-align: center;
     text-decoration: none;
+    transition: .5s;
+}
+
+.icon:hover {
+    transform: scale(1.25);
 }
 
 .section__item--bold-font {
