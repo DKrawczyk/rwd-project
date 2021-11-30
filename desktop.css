@@ -198,7 +198,7 @@ input {
 }
 
 .article__row--grid {
-    height: 65vh;
+    min-height: 65vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;

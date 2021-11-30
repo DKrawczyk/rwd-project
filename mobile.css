@@ -240,6 +240,7 @@ input:checked + .hamburger::after {
 }
 
 .section {
+    margin: 30px 0;
     display: flex;
 }
 
@@ -395,7 +396,7 @@ input:checked + .hamburger::after {
     border-color: rgb(1, 129, 245);
     color: rgb(1, 129, 245);
     width: 28vw;
-    height: 5vh;
+    min-height: 5vh;
     background-color: white;
     border: 1px solid;
     font-size: 1rem;
@@ -510,6 +511,6 @@ input:checked + .hamburger::after {
 }
 
 .footer__div {
-    height: 100%;
+    min-height: 100%;
     display: grid;
 }

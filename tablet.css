@@ -225,7 +225,7 @@ input:checked + .hamburger::after {
 }
 
 .article__row--grid {
-    height: 60vh;
+    min-height: 60vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
