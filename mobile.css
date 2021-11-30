@@ -132,7 +132,7 @@ input:checked + .hamburger::after {
     width: 40%;
     color: var(--color-alfa);
     font-size: 1.2rem;
-    height: 6vh;
+    min-height: 6vh;
     border-radius: 10px;
     margin-top: 5%;
 }
@@ -143,7 +143,7 @@ input:checked + .hamburger::after {
 }
 
 .section__position {
-    height: 100vh;
+    min-height: 90vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 90%;
@@ -239,9 +239,13 @@ input:checked + .hamburger::after {
     background-color: rgb(1, 129, 245);
 }
 
+.section {
+    display: flex;
+}
+
 .section__background {
     background: url(./images/banner/testmonial.png);
-    height: 60vh;
+    min-height: 60vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -293,7 +297,7 @@ input:checked + .hamburger::after {
 
 .main__row {
     display: grid;
-    height: 160vh;
+    max-height: 160vh;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2.4fr 2.7fr 2.4fr;
     grid-template-areas: 
@@ -400,7 +404,7 @@ input:checked + .hamburger::after {
 
 .section__row--blue {
     display: grid;
-    height: 36vh;
+    min-height: 36vh;
     margin-top: 30px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;

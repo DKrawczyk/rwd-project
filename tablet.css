@@ -70,7 +70,7 @@ input:checked + .hamburger::after {
     right: 0%;
     top: 10%;
     background-color: var(--color-beta);
-    height: 100vh;
+    min-height: 100vh;
     opacity: 0.95;
     clip-path: ellipse(74% 70% at 90% 24%);
     text-align: center;
@@ -147,10 +147,10 @@ input:checked + .hamburger::after {
     margin-left: 2%;
     color: var(--color-alfa);
     font-size: 1.2rem;
-    height: 8vh;
+    min-height: 8vh;
     border-radius: 10px;
     margin-top: 5%;
-    width: 50%;
+    max-width: 50%;
 }
 
 .header__photo--size {
@@ -187,7 +187,7 @@ input:checked + .hamburger::after {
 }
 
 .list__icons {
-    width: 30%;
+    max-width: 30%;
     flex-direction: column;
 }
 
@@ -374,7 +374,7 @@ input:checked + .hamburger::after {
 }
 
 .main__team {
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .main__business--div {
@@ -415,13 +415,14 @@ input:checked + .hamburger::after {
 }
 
 .section--blue {
+    display: flex;
     background-color: rgb(93, 178, 255);
-    height: 60vh;
+    min-height: 60vh;
 }
 
 .section__row--blue {
     display: grid;
-    height: 100%;
+    min-height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "section__div";
