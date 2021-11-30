@@ -1,3 +1,7 @@
+
+##	README IS OUT OF ORDER FOR NOW :)
+Is in the process of being created
+
 <change>
 ![a screenshot presenting the front page of the project website](./assets/screen.png)
 <change>
