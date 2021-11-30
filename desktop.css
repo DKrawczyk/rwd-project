@@ -44,11 +44,12 @@
 }
 
 .navigation__item {
-    padding: 5px 25px;
+    padding: 5px 0;
 }
 
 .navigation__item > a {
     text-decoration: none;
+    padding: 5px 25px;
     color: var(--color-alfa);
 }
 
