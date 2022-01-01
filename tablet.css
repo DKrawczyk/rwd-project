@@ -51,7 +51,7 @@ input {
 }
 
 input:checked + .hamburger + .navigation__list {
-     display: block;
+    display: block;
 }
 
 input:checked + .hamburger {

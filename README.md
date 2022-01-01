@@ -1,3 +1,12 @@
+1. Reset CSS
+2. Animacje i animowane menu
+3. Wykorzystanie strony https://gs.statcounter.com/ aby ustalić rozdzielczość
+4. Strona zgodna ze standardami RWD, robiona pod telefon, tablet i desktop
+5. Nazewnictwo BEM
+6. Użycie pliku global.css
+7. Import czcionek z google fonts
+
+
 
 ##	README IS OUT OF ORDER FOR NOW :)
 Is in the process of being created
