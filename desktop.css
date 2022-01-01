@@ -7,7 +7,7 @@
 .header__row {
     display: flex;
     align-items: center;
-    height: 10vh;
+    min-height: 10vh;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
@@ -27,7 +27,7 @@
     border: none;
     color: var(--color-alfa);
     font-size: 1rem;
-    height: 51%;
+    height: 50px;
     border-radius: 5px;
     width: 10%;
     transition: transform .5s;
@@ -66,12 +66,12 @@ input {
 .text__title {
     background-repeat: no-repeat;
     background-size: contain;
-    height: 95vh;
+    min-height: 95vh;
 }
 
 .text__title--position {
     display: grid;
-    height: 100%;
+    min-height: 100%;
     width: auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -82,7 +82,7 @@ input {
 
 .text__content {
     grid-area: text__content;
-    height: 100%;
+    min-height: 100%;
     padding-top: 15%;
     display: flex;
     flex-direction: column;
@@ -92,7 +92,8 @@ input {
 
 .header__photo {
     grid-area: header__photo;
-    height: 100%;
+    min-height: 100%;
+    margin-top: 6%;
 }
 
 .content__header {
@@ -112,7 +113,7 @@ input {
     margin-left: 2%;
     color: var(--color-alfa);
     font-size: 1.2rem;
-    height: 8vh;
+    min-height: 8vh;
     border-radius: 10px;
     margin-top: 5%;
     width: 50%;
@@ -130,7 +131,7 @@ input {
 }
 
 .section__icons {
-    margin-bottom: 12%;
+    margin-bottom: 10%;
 }
 
 .row {
@@ -165,7 +166,7 @@ input {
 }
 
 .list__icon--size  {
-    height: 110px;
+    min-height: 110px;
     width: 110px;
     border-radius: 20px;
 }
@@ -227,7 +228,7 @@ input {
     border-radius: 10px;
     border: none;
     width: 50%;
-    height: 10%;
+    min-height: 10%;
     margin-left: 2%;
     color: var(--color-alfa);
     font-size: 1.2rem;
@@ -241,7 +242,7 @@ input {
 
 .section__background {
     background: url(./images/banner/testmonial.png);
-    height: 80vh;
+    min-height: 80vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -251,7 +252,9 @@ input {
     margin-top: 20px;
     max-height: 100%;
     width: auto;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section__background::before {
@@ -269,6 +272,7 @@ input {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 4%;
 }
 
 .section__rate {
@@ -293,7 +297,7 @@ input {
 }
 
 .main__container {
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .main__container--inside {
@@ -307,7 +311,7 @@ input {
     box-shadow: 0px 0px 18px 0px rgb(0 0 0 / 60%);
     margin-bottom: 20px;
     width: 32%;
-    height: 44vh;
+    min-height: 44vh;
     transition: transform .5s;
 }
 
@@ -338,7 +342,7 @@ input {
 }
 
 .main__title {
-    height: 8vh;
+    min-height: 8vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -354,7 +358,7 @@ input {
 }
 
 .main__team {
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .main__business--div {
@@ -387,7 +391,7 @@ input {
     border-color: rgb(1, 129, 245);
     color: rgb(1, 129, 245);
     width: 44%;
-    height: 5vh;
+    min-height: 5vh;
     background-color: white;
     border: 1px solid;
     font-size: 1rem;
@@ -402,12 +406,13 @@ input {
 
 .section--blue {
     background-color: rgb(93, 178, 255);
-    height: 65vh;
+    min-height: 65vh;
+    display: flex;
 }
 
 .section__row--blue {
     display: grid;
-    height: 100%;
+    min-height: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "section__div";
@@ -434,7 +439,7 @@ input {
 
 .section__container--black {
     background-color: rgb(40, 40, 40);
-    height: 74vh;
+    min-height: 74vh;
 }
 
 .section__row--black {
@@ -483,7 +488,7 @@ input {
     background-color: rgb(86, 86, 86);
     margin: 15px 5px;
     width: 38px;
-    height: 38px;
+    min-height: 38px;
     text-align: center;
     text-decoration: none;
     transition: .5s;
@@ -509,7 +514,10 @@ input {
 
 .footer__row {
     text-align: center;
-    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
     width: auto;
     color: var(--color-alfa);
     margin: 0 auto;
@@ -518,15 +526,8 @@ input {
 
 .footer__rights {
     font-size: 0.8rem;
-    margin: auto;
 }
 
 .footer__creators {
     color: rgb(35, 119, 226);
 }
-
-.footer__div {
-    height: 100%;
-    display: grid;
-}
-
