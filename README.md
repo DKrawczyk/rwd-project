@@ -1,96 +1,88 @@
-1. Reset CSS
-2. Animacje i animowane menu
-3. Wykorzystanie strony https://gs.statcounter.com/ aby ustalić rozdzielczość
-4. Strona zgodna ze standardami RWD, robiona pod telefon, tablet i desktop
-5. Nazewnictwo BEM
-6. Użycie pliku global.css
-7. Import czcionek z google fonts
+Foto
+
+Thanks for watching my first HTML and CSS RWD project! :)
+
+You can see this website (link here). 
+It is based on Colorlib free template.
 
 
+# Installation
 
-##	README IS OUT OF ORDER FOR NOW :)
-Is in the process of being created
+This project doesn't use node or npm. This website is made by pure HTML and CSS.
 
-<change>
-![a screenshot presenting the front page of the project website](./assets/screen.png)
-<change>
-# RWD Website Project
 
-RWD Website is a responsive landing page modeled after [Colorlib free Applab template](https://colorlib.com/wp/template/applab/). 
+# Solutions provided in the project
 
-<change>
-See [the RWD Website]().
-<change>
+- To achieve this result I used Perfect Pixel and ColorZilla web extension
 
-## Installation
+- I used basic reset CSS for better and easier styling without not necessary margins and other problems 
 
-The project uses [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/). Having them installed, type into the terminal: `npm i` to install node-sass package.
+- My first animated hamburger icon 
 
-## Solutions provided in the project
-
-- CSS file created with [node-sass library](https://www.npmjs.com/package/node-sass).
-
-- Sass mixins used to define breakpoints – having all breakpoints in one place makes it possible to change them at any time, all at once. See the example of mixin for desktop breakpoint beneath:
-```
-@mixin desktop {
-	@media (min-width: 1330px) {
-		@content;
+	.hamburger::before, .hamburger::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-top: 5px solid #ffffff;
+		transform: translateY(5px);
 	}
-}
-```
-- Responsive font size created with CSS function: [clamp()](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp). Using vw unit for the middle parameter value makes the font grow and shrink smoothly while resolution changes.
-As clamp() is not fully supported yet, it was necessary to provide also the media queries breakpoints. Here is the example of using both - mixins and clamp(): 
-```
-&__headline {
-		font-size: 1.3rem;
-	@include tablet-and-landscape {
-		font-size: 1.5rem;
+
+	.hamburger::after {
+		transform: translateY(15px);
+		transition: 0.3s transform linear;
 	}
-	@include desktop{
-		font-size: 1.7rem;
+
+	input:checked + .hamburger {
+		transform: rotate(45deg) translateY(10px); 
+		border: none;
 	}
-	@supports (font-size: clamp(1.3rem, 2vw, 1.7rem)) {
-		font-size: clamp(1.3rem, 2vw, 1.7rem);
-	}}
-```
 
-- Linear-gradient used for CSS background property along with an image allowed to achieve the effect of colored overlay. As linear-gradient is now [well-supported](https://caniuse.com/mdn-css_types_image_gradient_linear-gradient) across different browsers, using it is a more convenient and space-saving way of creating an overlay than doing it with CSS pseudo-elements.
-```
-background: linear-gradient(rgba(97, 179, 255, 0.9), rgba(97, 179, 255, 0.9)),
-		    url(../images/banner/testmonial.png) no-repeat center center/cover;
-```
+	input:checked + .hamburger::after {
+		transform: rotate(-90deg) translateX(-5px);
+	}
 
-- Grid provides flexibility to footer elements – they can be stretched in one row as well as arranged in two or one column.
+- Made hamburger icon without using JavaScript, just pure HTML and CSS using input and checkbox technic
 
-## Conclusions for future projects
+		<input type="checkbox" id="menu-switcher" class="menu__switcher"/>
+        <label class="hamburger" for="menu-switcher" ></label>
 
-I found a way to **improve** margin and padding changes depending on resolution. In this project they are modified with media queries in the place of their occurrence. In the future projects I will definitely use Sass @extend rule, keeping all shared measures in one place and changing them with only one time use of media queries per breakpoint. Example of usage beneath:
 
-#### File storing resolution values:
-```
-%shared-pd {
-  padding: 10px;
-  @include tablet-and-landscape {
-    padding: 50px;
-  }
-  @include desktop {
-    padding: 100px;
-  }
-}
+	input:checked + .hamburger + .navigation__list {
+		display: block;
+	}
 
-```
-#### Values shared between different elements:
-```
-.footer-up {
-	@extend %shared-pd;
-}
-```
-```
-.download {
-	@extend %shared-pd;
-}
-```
+	input:checked + .hamburger {
+		transform: rotate(45deg) translateY(10px); 
+		border: none;
+	}
 
-## Thanks
-- To [Colorlib](https://colorlib.com/wp/) for free templates.
-- To my [mentor](https://github.com/devmentor-pl) for creating the task and for the code review.
+- Used https://gs.statcounter.com/ website to check and decide, which resolution is the best to support most devices
+
+- This project is a fully responsive landing page made for phones, tablets and desktop version
+
+- In this project I tried to use the BEM methodology
+
+- This project includes global.css to prevent writing unnecessary code, for example:
+
+		:root {
+		--color-alfa: white;
+		--color-beta: black;
+	}
+
+- In this project I used CSS grid layout to make the website more readable and just for fun, to try my skills :)
+
+- Font were imported from https://fonts.google.com/
+
+
+# Conclusions for future solutions:
+
+Next time if the project would have more than two columns I will use a grid layout. Otherwise, I think that flex is one of the best ways to style websites.
+Every solution made without using webpack should be check in https://caniuse.com/ website and optimization solutions should be checked by https://search.google.com/test/mobile-friendly.
+
+The next project would be a great opportunity to use SCSS and SASS technology. Functions like clamp(), calc() would be also a great idea to use in the next website.
+
+
+# Special thanks
+To my [mentor](https://github.com/devmentor-pl) for creating the task and for the code review!
