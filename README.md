@@ -1,6 +1,6 @@
 ![RWD Website Project](https://github.com/DKrawczyk/rwd-project/blob/main/assets/preview.png?raw=true)
 
-Thanks for watching my first HTML and CSS RWD project! :)
+Thanks for watching my first *HTML* and *CSS RWD project*!
 
 You can see this website **[HERE](https://dkrawczyk.github.io/rwd-project/)**. 
 It is based on [Colorlib free template](https://colorlib.com/wp/template/applab/).
